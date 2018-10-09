@@ -5,7 +5,7 @@ Small image to serve git
 ## Add Users
 
 ```
-htpasswd -c /opt/git/.htpasswd <user>
+htpasswd /opt/git/.htpasswd <user>
 ```
 
 
