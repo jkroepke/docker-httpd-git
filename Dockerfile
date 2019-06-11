@@ -6,7 +6,7 @@ VOLUME /opt/git/
 
 USER 0
 
-RUN yum install -y git && mkdir -p /opt/git/ && chmod 777 /opt/git/
+RUN yum update -y && yum install -y git && yum clean all && mkdir -p /opt/git/ && chmod 777 /opt/git/
 
 ADD git.conf /etc/httpd/conf.d/git.conf
 
